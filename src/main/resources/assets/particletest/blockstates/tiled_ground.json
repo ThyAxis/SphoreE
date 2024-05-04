@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "particletest:block/tiled_ground"
+    }
+  }
+}

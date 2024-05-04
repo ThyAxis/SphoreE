@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "particletest:block/cracked_slab_tiled_ground"
+    },
+    "type=double": {
+      "model": "particletest:block/cracked_tiled_ground"
+    },
+    "type=top": {
+      "model": "particletest:block/cracked_slab_tiled_ground_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "particletest:block/cracked_tiled_ground",
+    "top": "particletest:block/cracked_tiled_ground",
+    "side": "particletest:block/cracked_tiled_ground"
+  }
+}
