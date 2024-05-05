@@ -1,0 +1,8 @@
+{
+  "sound_block_pace": {
+    "subtitle": "sounds.particletest.rhino_sound",
+    "sounds": [
+      "particletest:rhino_sound"
+    ]
+  }
+}

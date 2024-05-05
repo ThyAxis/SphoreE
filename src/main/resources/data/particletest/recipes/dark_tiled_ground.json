@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "%#%",
+    "#%#",
+    "%#%"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:green_terracotta"
+    },
+    "%": {
+      "item": "minecraft:gray_terracotta"
+    }
+  },
+  "result": {
+    "item": "particletest:tiled_ground"
+  }
+}

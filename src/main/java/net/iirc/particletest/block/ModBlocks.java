@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.GlowstoneFeature;
 import net.minecraftforge.client.model.obj.ObjMaterialLibrary;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -26,39 +27,35 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ParticleTest.MODID);
 
     public static final RegistryObject<Block> TILED_GROUND = registerBlock("tiled_ground",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> DARK_TILED_GROUND = registerBlock("dark_tiled_ground",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> CRACKED_TILED_GROUND = registerBlock("cracked_tiled_ground",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> RED_BRICK_WALLPAPER = registerBlock("red_brick_wallpaper",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> RED_DIRTY_BRICK_WALLPAPER = registerBlock("red_dirty_brick_wallpaper",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     public static final RegistryObject<Block> CRACKED_STAIR_TILED_GROUND = registerBlock("cracked_stair_tiled_ground",
             () -> new StairBlock(() -> ModBlocks.CRACKED_TILED_GROUND.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+                    BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS)));
 
     public static final RegistryObject<Block> CRACKED_SLAB_TILED_GROUND = registerBlock("cracked_slab_tiled_ground",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
-    private static ToIntFunction<BlockState> lightLevelFunction = (blockstate) -> 999999999;
+    private static ToIntFunction<BlockState> lightLevelFunction = (blockstate) -> 20;
 
-    private static ToIntFunction<BlockState> lightLevelFunction2 = (blockstate) -> 20;
 
 
 
     public static final RegistryObject<Block> EYE_LAMP = registerBlock("eye_lamp",
             () -> new RedstoneLampBlock(BlockBehaviour.Properties.of().lightLevel(lightLevelFunction)));
 
-
-    public static final RegistryObject<Block> EYE_LAMP_RED = registerBlock("eye_lamp_red",
-            () -> new RedstoneLampBlock(BlockBehaviour.Properties.of().lightLevel(lightLevelFunction2)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

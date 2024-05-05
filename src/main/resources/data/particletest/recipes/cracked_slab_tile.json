@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "",
+    "###",
+    ""
+  ],
+  "key": {
+    "#": {
+      "item": "particletest:cracked_tiled_ground"
+    }
+  },
+  "result": {
+    "item": "particletest:cracked_slab_tiled_ground",
+    "count": 4
+  }
+}

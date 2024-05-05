@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 50,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "minecraft:chiseled_red_sandstone"
+  },
+  "result": "particletest:red_brick_wallpaper"
+}

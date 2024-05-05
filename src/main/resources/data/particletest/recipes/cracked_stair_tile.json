@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "particletest:cracked_tiled_ground"
+    },
+    "%": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "particletest:cracked_stair_tiled_ground"
+  }
+}

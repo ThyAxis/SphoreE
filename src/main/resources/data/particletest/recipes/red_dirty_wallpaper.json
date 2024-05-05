@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "%#%",
+    "#%#",
+    "%#%"
+  ],
+  "key": {
+    "#": {
+      "item": "particletest:red_brick_wallpaper"
+    },
+    "%": {
+      "item": "minecraft:kelp"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "particletest:red_dirty_brick_wallpaper"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ambient_scary": {
+    "sounds": [
+      {
+        "name": "particletest:ambient_scary",
+        "stream": true
+      }
+    ]
+  },
+"metal_explosion": {
+  "sounds": [
+    {
+      "name": "particletest:metal_explosion",
+      "stream": true
+    }
+  ]
+}
+}
