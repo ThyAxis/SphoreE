@@ -1,7 +1,6 @@
 package net.iirc.particletest.block;
 
 import net.iirc.particletest.ParticleTest;
-import net.iirc.particletest.block.custom.GemPolisherBlock;
 import net.iirc.particletest.item.ModItems;
 import net.iirc.particletest.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
@@ -63,8 +62,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> EYE_LAMP_CORRUPTED = registerBlock("eye_lamp_corrupted",
             () -> new RedstoneLampBlock(BlockBehaviour.Properties.of().lightLevel(lightLevelFunction2)));
 
-    public static final RegistryObject<Block> GEM_POLISHER = registerBlock("gem_polisher",
-            () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+
 
 
 
