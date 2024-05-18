@@ -14,5 +14,61 @@
       "stream": true
     }
   ]
-}
+},
+  "arm_fracture": {
+    "sounds": [
+      {
+        "name": "particletest:arm_fracture",
+        "stream": true
+      }
+    ]
+  },
+  "clock_ambience": {
+    "sounds": [
+      {
+        "name": "particletest:clock_ambience",
+        "stream": true
+      }
+    ]
+  },
+  "ghost_ambience_new": {
+    "sounds": [
+      {
+        "name": "particletest:ghost_ambience_new",
+        "stream": true
+      }
+    ]
+  },
+  "ghost_atmosphere": {
+    "sounds": [
+      {
+        "name": "particletest:ghost_atmosphere",
+        "stream": true
+      }
+    ]
+  },
+  "glass_shatter": {
+    "sounds": [
+      {
+        "name": "particletest:glass_shatter",
+        "stream": true
+      }
+    ]
+  },
+  "room_ambience": {
+    "sounds": [
+      {
+        "name": "particletest:room_ambience",
+        "stream": true
+      }
+    ]
+  },
+  "wood_cracking": {
+    "sounds": [
+      {
+        "name": "particletest:wood_cracking",
+        "stream": true
+      }
+    ]
+  }
 }

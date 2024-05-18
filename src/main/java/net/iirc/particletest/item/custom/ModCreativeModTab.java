@@ -17,7 +17,16 @@ public class ModCreativeModTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUBY_SCYTHE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
+
+
+
+                        // ITEMS
+                        output.accept(ModItems.METH.get());
+                        output.accept(ModItems.RED_PHOSPHORUS.get());
                         output.accept(ModItems.RUBY_SCYTHE.get());
+
+                        // BLOCKS
+                        output.accept(ModBlocks.EYE_LAMP.get());
                         output.accept(ModBlocks.TILED_GROUND.get());
                         output.accept(ModBlocks.CRACKED_TILED_GROUND.get());
                         output.accept(ModBlocks.DARK_TILED_GROUND.get());
@@ -25,8 +34,7 @@ public class ModCreativeModTab {
                         output.accept(ModBlocks.CRACKED_STAIR_TILED_GROUND.get());
                         output.accept(ModBlocks.RED_BRICK_WALLPAPER.get());
                         output.accept(ModBlocks.RED_DIRTY_BRICK_WALLPAPER.get());
-                        output.accept(ModBlocks.EYE_LAMP.get());
-
+                        output.accept(ModBlocks.GEM_POLISHER.get());
 
                     })).build());
 

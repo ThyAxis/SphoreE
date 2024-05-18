@@ -2,10 +2,19 @@ package net.iirc.particletest;
 
 import com.mojang.logging.LogUtils;
 import net.iirc.particletest.block.ModBlocks;
+import net.iirc.particletest.datagen.ModWorldGenProvider;
+import net.iirc.particletest.gui.OrbFogUI;
 import net.iirc.particletest.item.ModItems;
 import net.iirc.particletest.item.custom.ModCreativeModTab;
+import net.iirc.particletest.screen.GemPolishingStationScreen;
+import net.iirc.particletest.screen.ModMenuTypes;
 import net.iirc.particletest.sounds.ModSounds;
+import net.iirc.particletest.worldgen.biome.ModBiomes;
+import net.iirc.particletest.worldgen.dimension.ModDimensions;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
+import net.minecraftforge.client.gui.overlay.ForgeGui;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -46,6 +55,7 @@ public class ParticleTest
         ModItems.register(modEventBus);
         ModCreativeModTab.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -78,7 +88,13 @@ public class ParticleTest
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
-    }
+
+//        @SubscribeEvent
+//        public static void registerGuiOverlays(RegisterGuiOverlaysEvent event) {
+//            event.registerAboveAll("orb_fog", OrbFogUI.OVERLAY);
+//        }
+//    }
+}
 }

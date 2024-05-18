@@ -1,7 +1,9 @@
 package net.iirc.particletest.block;
 
 import net.iirc.particletest.ParticleTest;
+import net.iirc.particletest.block.custom.GemPolisherBlock;
 import net.iirc.particletest.item.ModItems;
+import net.iirc.particletest.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -48,13 +50,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRACKED_SLAB_TILED_GROUND = registerBlock("cracked_slab_tiled_ground",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
-    private static ToIntFunction<BlockState> lightLevelFunction = (blockstate) -> 20;
+    private static final ToIntFunction<BlockState> lightLevelFunction = (blockstate) -> 90;
+
+    private static final ToIntFunction<BlockState> lightLevelFunction2 = (blockstate) -> 90;
 
 
 
 
     public static final RegistryObject<Block> EYE_LAMP = registerBlock("eye_lamp",
             () -> new RedstoneLampBlock(BlockBehaviour.Properties.of().lightLevel(lightLevelFunction)));
+
+    public static final RegistryObject<Block> EYE_LAMP_CORRUPTED = registerBlock("eye_lamp_corrupted",
+            () -> new RedstoneLampBlock(BlockBehaviour.Properties.of().lightLevel(lightLevelFunction2)));
+
+    public static final RegistryObject<Block> GEM_POLISHER = registerBlock("gem_polisher",
+            () -> new GemPolisherBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -1,15 +1,22 @@
 {
-  "block.particletest.tiled_ground": "Dark Tiled Ground Block",
   "item.particletest.tiled_ground": "Dark Tiled Ground",
-  "block.particletest.dark_tiled_ground": "Light Tiled Ground Block",
   "item.particletest.dark_tiled_ground": "Light Tiled Ground",
-  "block.particletest.cracked_tiled_ground": "Cracked Tiled Ground Block",
   "item.particletest.cracked_tiled_ground": "Cracked Tiled Ground",
+  "item.particletest.ruby_scythe": "Ruby Pickaxe",
+  "item.particletest.meth": "Meth",
+  "item.particletest.red_phosphorus": "Red Phosphorus",
+
+  "block.particletest.cracked_tiled_ground": "Cracked Tiled Ground Block",
+  "block.particletest.tiled_ground": "Dark Tiled Ground Block",
+  "block.particletest.dark_tiled_ground": "Light Tiled Ground Block",
   "block.particletest.cracked_stair_tiled_ground": "Cracked Stair Tiled Ground",
   "block.particletest.cracked_slab_tiled_ground": "Cracked Slab Tiled Ground",
-  "item.particletest.ruby_scythe": "Ruby Pickaxe",
-  "creativetab.tutorial_tab": "Sphore Tab",
   "block.particletest.red_brick_wallpaper": "Red Brick Wallpaper",
   "block.particletest.red_dirty_brick_wallpaper": "Red Dirty Brick Wallpaper",
-  "block.particletest.eye_lamp": "Eye Lamp"
+  "block.particletest.eye_lamp": "Unawakened Eye Lamp",
+  "block.particletest.eye_lamp_corrupted": "Awakened Eye Lamp",
+  "block.particletest.gem_polisher": "Gem Polisher",
+
+  "creativetab.tutorial_tab": "Sphore Tab"
+
 }

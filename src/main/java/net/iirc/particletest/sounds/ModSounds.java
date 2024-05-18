@@ -14,7 +14,13 @@ public class ModSounds {
 
 
     public static final RegistryObject<SoundEvent> AMBIENT_SCARY = registerSoundEvents("ambient_scary");
-    public static final RegistryObject<SoundEvent> METAL_EXPLOSION = registerSoundEvents("metal_explosion");
+    public static final RegistryObject<SoundEvent> ARM_FRACTURE = registerSoundEvents("arm_fracture");
+    public static final RegistryObject<SoundEvent> CLOCK_AMBIENCE = registerSoundEvents("clock_ambience");
+    public static final RegistryObject<SoundEvent> GHOST_AMBIENCE_NEW = registerSoundEvents("ghost_ambience_new");
+    public static final RegistryObject<SoundEvent> GHOST_ATMOSPHERE = registerSoundEvents("ghost_atmosphere");
+    public static final RegistryObject<SoundEvent> GLASS_SHATTER = registerSoundEvents("glass_shatter");
+    public static final RegistryObject<SoundEvent> ROOM_AMBIENCE = registerSoundEvents("room_ambience");
+    public static final RegistryObject<SoundEvent> WOOD_CRACKING = registerSoundEvents("wood_cracking");
 
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {

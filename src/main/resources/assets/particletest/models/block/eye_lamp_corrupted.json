@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "particletest:block/eye_lamp",
+    "up": "particletest:block/eye_lamp",
+    "north": "particletest:block/eye_lamp",
+    "east": "particletest:block/eye_lamp",
+    "west": "particletest:block/eye_lamp",
+    "south": "particletest:block/eye_lamp_corrupted"
+  }
+}
